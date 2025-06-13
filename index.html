@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mapping Women's Contributions in Malaysian Academic History</title>
+        <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.36/dist/fullpage.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.36/dist/fullpage.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            poppins: ['Poppins', 'sans-serif'] // font-poppins
+                        }
+                    }
+                }
+            };
+        </script>
+    </head>
+
+    <body class="bg-gradient-to-br from-purple-900 to-indigo-900">
+        <div id="fullpage" class="font-poppins">
+            <section
+                id="section1"
+                class="section bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('img/bg.png')] bg-center bg-cover bg-no-repeat min-h-screen w-full p-8 md:p-12 lg:p-16 flex flex-col justify-center relative overflow-hidden">
+                <!-- Decorative elements -->
+                <div
+                    class="absolute inset-0 opacity-10"
+                    style="
+                        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==');
+                    "></div>
+
+                <div class="max-w-5xl mx-auto relative z-10">
+                    <div class="mb-12 title">
+                        <h1
+                            class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                            Mapping Women's Contributions in Malaysian Academic History
+                        </h1>
+                        <p class="text-xl text-purple-200 font-light italic">A Digital Archive Prototype</p>
+                    </div>
+
+                    <div class="content bg-white/10 backdrop-blur-lg rounded-xl p-8 border border-white/20 shadow-2xl">
+                        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6 flex items-center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 mr-3 text-purple-300"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                            Overview
+                        </h2>
+
+                        <div class="space-y-6 text-lg text-purple-50">
+                            <p class="leading-relaxed">
+                                This project aims to recognize and digitally preserve the legacy of women who have
+                                played vital roles in shaping higher education in Malaysia. By developing a small-scale
+                                digital archive prototype, the project will document and highlight the achievements of
+                                notable female academics and institutional leaders.
+                            </p>
+                            <p class="leading-relaxed">
+                                The archive will feature biographical entries, career milestones, institutional
+                                affiliations, and multimedia content such as images, document scans, and interactive
+                                elements. This digital initiative helps enhance public accessibility and promote greater
+                                awareness of the underrepresented contributions of women in Malaysian academia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list max-w-5xl mx-auto relative z-10 mt-12">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-8 border border-white/20 shadow-2xl">
+                        <h3 class="text-xl font-semibold text-white mb-6 flex items-center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 mr-3 text-purple-300"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            Group 12
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                            <div
+                                class="item bg-white/20 hover:bg-white/30 transition-all duration-300 rounded-lg p-4 shadow-md backdrop-blur-sm border border-white/10 hover:border-purple-300 group">
+                                <span class="text-purple-50 group-hover:text-white font-medium">HE XINLEI</span>
+                                <span class="block text-purple-200 text-sm">23114493</span>
+                            </div>
+                            <div
+                                class="item bg-white/20 hover:bg-white/30 transition-all duration-300 rounded-lg p-4 shadow-md backdrop-blur-sm border border-white/10 hover:border-purple-300 group">
+                                <span class="text-purple-50 group-hover:text-white font-medium">CAI LINFENG</span>
+                                <span class="block text-purple-200 text-sm">23070544</span>
+                            </div>
+                            <div
+                                class="item bg-white/20 hover:bg-white/30 transition-all duration-300 rounded-lg p-4 shadow-md backdrop-blur-sm border border-white/10 hover:border-purple-300 group">
+                                <span class="text-purple-50 group-hover:text-white font-medium">PAN CHEN</span>
+                                <span class="block text-purple-200 text-sm">24050132</span>
+                            </div>
+                            <div
+                                class="item bg-white/20 hover:bg-white/30 transition-all duration-300 rounded-lg p-4 shadow-md backdrop-blur-sm border border-white/10 hover:border-purple-300 group">
+                                <span class="text-purple-50 group-hover:text-white font-medium">HUANG XUEYING</span>
+                                <span class="block text-purple-200 text-sm">24055814</span>
+                            </div>
+                            <div
+                                class="item bg-white/20 hover:bg-white/30 transition-all duration-300 rounded-lg p-4 shadow-md backdrop-blur-sm border border-white/10 hover:border-purple-300 group">
+                                <span class="text-purple-50 group-hover:text-white font-medium">MI JIARUI</span>
+                                <span class="block text-purple-200 text-sm">24065276</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="section2"
+                class="section min-h-screen w-full flex justify-center items-center px-8 pt-[20vh] relative overflow-hidden">
+                <!-- Decorative elements -->
+                <div
+                    class="absolute inset-0 opacity-10"
+                    style="
+                        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==');
+                    "></div>
+
+                <div class="max-w-[80vw] mx-auto relative z-10 flex flex-wrap gap-8">
+                    <!-- Main content container with scrollable area -->
+                    <!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-purple-400 scrollbar-track-transparent"> -->
+                    <div
+                        class="card flex flex-1 min-w-96 flex-col gap-8 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-purple-400 scrollbar-track-transparent">
+                        <!-- Research Questions -->
+                        <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 shadow-xl">
+                            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6 mr-3 text-purple-300"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                Research Questions
+                            </h2>
+                            <div class="space-y-4 text-purple-50">
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >1</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        How can digital archives be used to highlight the role of women in the
+                                        development of Malaysian higher education?
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >2</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        What tools and metadata best support the visibility and accessibility of
+                                        historical academic contributions by women?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Objectives -->
+                        <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 shadow-xl">
+                            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6 mr-3 text-purple-300"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                                Objectives
+                            </h2>
+                            <div class="space-y-4 text-purple-50">
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >1</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        To develop a functional prototype of a digital archive that documents
+                                        influential female figures in Malaysian universities.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >2</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        To apply visual storytelling and digital humanities tools to present
+                                        biographical narratives, career milestones, and institutional contributions.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >3</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        To assess best practices in metadata creation, accessibility, and user interface
+                                        design for historical digital archives.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >4</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        To promote inclusivity and diversity by recognizing the contributions of women
+                                        in a traditionally male-dominated academic space.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-1 min-w-80 h-full">
+                        <!-- Project-related Graphics -->
+                        <div
+                            class="flex h-full flex-col bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 shadow-xl">
+                            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6 mr-3 text-purple-300"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                                </svg>
+                                Project-related Graphics
+                            </h2>
+                            <div class="flex items-start flex-col justify-between space-y-4 text-purple-50">
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >1</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        Interactive Timeline of key academic milestones by featured women (using
+                                        Timeline JS).
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >2</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        Institutional Map showing Malaysian universities and locations of significant
+                                        female academic figures.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >3</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        Portrait Gallery featuring archival photos, public CVs, and official portraits
+                                        of selected individuals.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >4</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        Career Path Visualizations to show cross-institutional influence and
+                                        achievements.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span
+                                        class="bg-purple-500 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0"
+                                        >5</span
+                                    >
+                                    <p class="leading-relaxed">
+                                        Infographic Summaries using Canva to present demographic or thematic insights
+                                        (e.g., most common disciplines).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline iframe at the bottom -->
+                    <div
+                        class="card flex-1 min-w-96 min-h-[700px] flex flex-col bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 shadow-2xl">
+                        <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 mr-3 text-purple-300"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            Timeline of Female Academic Leaders
+                        </h2>
+                        <div class="flex-1 rounded-xl overflow-hidden border border-purple-300/30">
+                            <iframe
+                                src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vSFTk0GCnQLGdlmwRSSSPbgVbUHsabvYnDqkQ52PDik_b-ly5A6o3fpCrCD6rcVhupJ9WwpazrxcHTI&font=Default&lang=en&initial_zoom=2&width=100%25&height=650"
+                                width="100%"
+                                height="100%"
+                                webkitallowfullscreen
+                                mozallowfullscreen
+                                allowfullscreen
+                                frameborder="0"
+                                class="rounded-lg"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="section3"
+                class="section min-h-screen w-full px-8 py-[20vh] flex flex-col justify-center relative overflow-hidden">
+                <!-- Decorative elements -->
+                <div
+                    class="absolute inset-0 opacity-10"
+                    style="
+                        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==');
+                    "></div>
+
+                <div class="flex flex-wrap gap-8 max-w-[80vw] mx-auto relative z-10">
+                    <!-- Proportion of Female Academics by Field -->
+                    <div
+                        class="left-card flex min-w-96 flex-1 flex-col bg-white/10 backdrop-blur-lg rounded-xl p-8 border border-white/20 shadow-2xl">
+                        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6 flex items-center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 mr-3 text-purple-300"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                            </svg>
+                            Proportion of Female Academics by Field
+                        </h2>
+                        <div class="flex-1 bg-white/20 rounded-lg flex items-center justify-center text-purple-100">
+                            <!-- ECharts pie chart placeholder -->
+                            <div id="pie" class="w-full h-96"></div>
+                            <!-- <p class="text-center">
+                                Interactive pie chart visualization of female academics<br />in STEM, Education, and
+                                Humanities fields
+                            </p> -->
+                        </div>
+                    </div>
+
+                    <!-- Preliminary List of Sources -->
+                    <div
+                        class="right-card min-w-96 flex-[2] bg-white/10 backdrop-blur-lg rounded-xl p-8 border border-white/20 shadow-2xl">
+                        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6 flex items-center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 mr-3 text-purple-300"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            Preliminary List of Sources
+                        </h2>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- University Archives -->
+                            <div class="bg-white/5 rounded-lg p-6 border border-white/10">
+                                <h3 class="text-xl font-medium text-purple-300 mb-4 flex items-center">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5 mr-2"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                    </svg>
+                                    University Archives
+                                </h3>
+                                <ul class="space-y-2 text-purple-100 overflow-hidden">
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span
+                                            >University of Malaya (UM) –
+                                            <a href="https://www.um.edu.my" class="text-purple-300 hover:text-white"
+                                                >https://www.um.edu.my</a
+                                            ></span
+                                        >
+                                    </li>
+                                    <li class="flex items-start overflow-hidden">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span
+                                            >Universiti Kebangsaan Malaysia (UKM) –
+                                            <a href="https://www.ukm.my" class="text-purple-300 hover:text-white"
+                                                >https://www.ukm.my</a
+                                            ></span
+                                        >
+                                    </li>
+                                    <li class="flex items-start overflow-hidden">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span
+                                            >Universiti Sains Malaysia (USM) –
+                                            <a href="https://www.usm.my" class="text-purple-300 hover:text-white"
+                                                >https://www.usm.my</a
+                                            ></span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Databases & Repositories -->
+                            <div class="bg-white/5 rounded-lg p-6 border border-white/10">
+                                <h3 class="text-xl font-medium text-purple-300 mb-4 flex items-center">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5 mr-2"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                                    </svg>
+                                    Databases & Repositories
+                                </h3>
+                                <ul class="space-y-2 text-purple-100 overflow-hidden">
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span>Women in Southeast Asian Academia databases</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span
+                                            >MyGOV Image Bank –
+                                            <a
+                                                href="https://www.malaysia.gov.my"
+                                                class="text-purple-300 hover:text-white"
+                                                >https://www.malaysia.gov.my</a
+                                            ></span
+                                        >
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span
+                                            >National Archives of Malaysia –
+                                            <a href="https://www.arkib.gov.my" class="text-purple-300 hover:text-white"
+                                                >https://www.arkib.gov.my</a
+                                            ></span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Open Sources -->
+                            <div class="bg-white/5 rounded-lg p-6 border border-white/10">
+                                <h3 class="text-xl font-medium text-purple-300 mb-4 flex items-center">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5 mr-2"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                    Open Sources
+                                </h3>
+                                <ul class="space-y-2 text-purple-100 overflow-hidden">
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span>Wikipedia entries (for cross-referencing basic data)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span>Public academic CVs (Google Scholar, ResearchGate, ORCID)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span>Institutional press releases and commemorative publications</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Tools & Platforms -->
+                            <div class="bg-white/5 rounded-lg p-6 border border-white/10">
+                                <h3 class="text-xl font-medium text-purple-300 mb-4 flex items-center">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5 mr-2"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    Tools & Platforms
+                                </h3>
+                                <ul class="space-y-2 text-purple-100 overflow-hidden">
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span>Omeka – for digital archiving and exhibit creation</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span>Timeline JS – for chronological narratives</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span>Palladio – for network mapping and spatial analysis</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3"></span>
+                                        <span>Canva – for creating infographics and visual summaries</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script>
+            const sr = ScrollReveal({
+                origin: 'top',
+                distance: '60px',
+                duration: 2000,
+                delay: 300,
+                rotate: { x: 0, y: 0, z: 0 },
+                opacity: 0,
+                scale: 1,
+                // easing: "cubic-bezier(0.645, 0.045, 0.355, 1)",
+                mobile: true,
+                reset: true
+            });
+            sr.reveal('#section1 .title', {
+                origin: 'top'
+            });
+
+            sr.reveal('#section1 .content', {
+                origin: 'bottom',
+                delay: 200
+            });
+
+            sr.reveal('#section1 .list', {
+                origin: 'bottom',
+                delay: 400
+            });
+
+            sr.reveal('#section1 .list .item', {
+                origin: 'bottom',
+                interval: 200
+            });
+
+            sr.reveal('#section2 .card', {
+                origin: 'bottom',
+                interval: 300,
+                distance: '100px'
+            });
+
+            sr.reveal('#section3 .left-card', {
+                origin: 'left'
+            });
+            sr.reveal('#section3 .right-card', {
+                origin: 'right'
+            });
+        </script>
+        <script type="text/javascript">
+            // const myFullpage = new fullpage('#fullpage', {
+            //     // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'], //设置每一屏的颜色
+            //     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thPage', 'lastPage'], //为每个部分定义锚点名称
+            //     menu: '#menu', //设置菜单导航的ID
+            //     navigation: true, //是否显示导航栏
+            //     slidesNavigation: true, //某一屏中可以左右轮播，这时是否显示左右箭头
+            //     lazyLoad: true,
+            //     credits: { enabled: false },
+            //     afterLoad: function (origin, destination) {}
+            // });
+        </script>
+        <script>
+            const chartDom = document.getElementById('pie');
+            const myChart = echarts.init(chartDom, null);
+            let option;
+
+            option = {
+                backgroundColor: 'transparent',
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{b}: {c} ({d}%)',
+                    backgroundColor: 'rgba(75, 0, 130, 0.8)',
+                    borderColor: '#D4AF37',
+                    textStyle: {
+                        color: '#FFFFFF',
+                        fontSize: 14
+                    }
+                },
+                // toolbox: {
+                //     show: true,
+                //     feature: {
+                //         saveAsImage: {
+                //             show: true,
+                //             title: '保存为图片',
+                //             pixelRatio: 2,
+                //             iconStyle: {
+                //                 color: '#D4AF37'
+                //             }
+                //         }
+                //     },
+                //     iconStyle: {
+                //         borderColor: '#D4AF37'
+                //     }
+                // },
+                series: [
+                    {
+                        name: 'Female Academics by Field',
+                        type: 'pie',
+                        radius: ['40%', '80%'],
+                        center: ['50%', '50%'],
+                        roseType: 'area',
+                        itemStyle: {
+                            borderRadius: 8,
+                            borderColor: 'rgba(255, 255, 255, 0.3)',
+                            borderWidth: 2
+                        },
+                        label: {
+                            color: '#FFFFFF',
+                            fontSize: 14,
+                            formatter: '{b|{b}}\n{c} ({d}%)',
+                            rich: {
+                                b: {
+                                    color: '#D4AF37',
+                                    fontSize: 14,
+                                    fontWeight: 'bold',
+                                    padding: [0, 0, 5, 0]
+                                }
+                            }
+                        },
+                        emphasis: {
+                            itemStyle: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(212, 175, 55, 0.5)'
+                            },
+                            label: {
+                                show: true,
+                                fontWeight: 'bold'
+                            }
+                        },
+                        data: [
+                            {
+                                value: 38,
+                                name: 'Education',
+                                itemStyle: {
+                                    color: '#5470C6' // 紫色
+                                }
+                            },
+                            {
+                                value: 24,
+                                name: 'Humanities',
+                                itemStyle: {
+                                    color: '#FF69B4' // 粉色
+                                }
+                            },
+                            {
+                                value: 20,
+                                name: 'Other',
+                                itemStyle: {
+                                    color: '#DDA0DD' // 紫罗兰
+                                }
+                            }
+                        ]
+                    }
+                ]
+            };
+
+            option && myChart.setOption(option);
+
+            document.querySelector('.fp-watermark').style.display = 'none';
+        </script>
+    </body>
+</html>
